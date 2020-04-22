@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
   padding: 0px;
@@ -85,9 +86,10 @@ button {
   padding: 0px;
   overflow: hidden;
   transition: all 0.5s ease-in;
-  z-index: 1;
+  z-index: 100;
   position: fixed;
-  border: none;
+  border: 1px solid #1f4e5f;
+    border-radius:0px 0px 30px 0px;
 }
 
 .sidelist {
@@ -117,6 +119,7 @@ button {
   padding: 0px;
   list-style: none;
   border: 5px solid darkslategrey;
+    border:3px solid white;
   background-image: url("sidenavimage.jpg");
   text-align: center;
   height: 40%;
@@ -124,11 +127,16 @@ button {
   background-repeat: no-repeat;
   border-radius: 15px;
   z-index: 1;
+    color:tra
 }
 
 .sidelisthead span {
   line-height: 420px;
   font-size: 40px;
+    background: -webkit-linear-gradient(360deg,white,white,#1f4e5f,#1f4e5f);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0px 0px 2px white;
 }
 
 .sidelist li:hover {
@@ -140,12 +148,52 @@ button {
   text-align: center;
   position: absolute;
   top: 60px;
+    width:100%;
 
   font-size: 130px;
   font-family: Gotu;
   color: #fff;
   background-image: url("cor.png");
-  width:-webkit-fill-available;
+  background-repeat: no-repeat;
+  background-size: cover;
+    color:tra
+}
+#covid19{
+    animation: animate 1s ease-in-out 0s infinite;
+    
+}
+@keyframes animate{
+    0%{
+        background:-webkit-linear-gradient(90deg,white,white,white,white,black);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        
+    }
+    25%{
+        background:-webkit-linear-gradient(90deg,white,white,white,black,white);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        
+    }
+    50%{
+        background:-webkit-linear-gradient(90deg,white,white,black,white,white);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        
+    }
+    75%{
+        background:-webkit-linear-gradient(90deg,white,black,white,white,white);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        
+    }
+    100%{
+        background:-webkit-linear-gradient(90deg,black,white,white,white,white);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        
+    }
+    
 }
 
 .mainarea {
@@ -245,6 +293,7 @@ left:20px;
     left: 5px;
     display: grid;
     transition: all 0.5s ease-in;
+      cursor: pointer;
     z-index: 1;
   }
 
@@ -252,6 +301,7 @@ left:20px;
     padding: 3px;
     margin: 2px;
     background-color: white;
+      cursor:pointer;
   }
 
   .k li {
@@ -429,4 +479,87 @@ margin-bottom: 50px;
 .dots
 {
   margin-top: 5px;
+}
+
+.main-box{
+  width:100%;
+  box-sizing: border-box;
+position:absolute;
+top:65px;
+margin:0px;
+padding:0px;
+font-family: Arial, Helvetica, sans-serif;
+
+height:450px;
+
+background-image:url(timeline-pic-1.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+overflow: hidden;
+
+
+
+}
+
+.main-box-in{
+  position:relative;
+  top:80px;
+  left:150px;
+  color:white;
+font-size:40px;
+font-weight: 500;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.time-header{
+
+position:absolute;
+top:530px;
+
+width:100%;
+text-align: center;
+background-color:  #79a8a9;
+
+}
+.div1{
+  background-color:#0099FF;
+  height:250px;
+  width:100%;
+  display:flex;
+  margin:20px 0px 20px 0px;
+  font-family: cursive;
+  overflow:hidden;
+  padding:20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border:1px solid transparent;
+  border-radius:20px;
+  
+
+}
+.sec{
+  flex:1;
+  border:1px solid transparent;
+  border-radius: 30px;
+  overflow:hidden;
+  
+  
+}
+.fir{
+  flex:4;
+}
+
+
+
+
+.time-header h1{
+  padding:20px;
+
+}
+
+
+
+
+.time-header span{
+  text-shadow:0px 0px 5px white;
 }

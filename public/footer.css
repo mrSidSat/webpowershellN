@@ -1,4 +1,8 @@
-
+.bottomfooter{
+position:fixed;
+left:0;
+bottom:0;
+}
 
 .background{
     background-color: #1F4E5F;

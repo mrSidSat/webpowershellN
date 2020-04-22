@@ -47,9 +47,12 @@ router.get("/home",function(req,res){
 });
 router.get("/login",function(req,res){
   res.render("login");
-})
+});
 router.get("/overview",function(req,res){
   res.render("overview");
+});
+router.get("/timeline",function(req,res){
+    res.render("timeline");
 });
 
 router.post("/Login.html",function(req){
